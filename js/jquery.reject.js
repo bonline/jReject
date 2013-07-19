@@ -7,6 +7,12 @@
  * Copyright: Copyright (c) 2009-2013 Steven Bower under dual MIT/GPLv2 license.
  */
 
+
+define(function (require) {
+
+    var jQuery = require("jquery"),
+        $ = require("jquery");
+
 (function($) {
 $.reject = function(options) {
 	var opts = $.extend(true,{
@@ -581,3 +587,5 @@ var _scrollSize = function() {
 
 	$.browserTest(navigator.userAgent);
 }(jQuery));
+
+});
