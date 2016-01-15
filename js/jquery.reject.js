@@ -8,11 +8,7 @@
  */
 
 
-define(function (require) {
-
-    var jQuery = require("jquery"),
-        $ = require("jquery");
-
+define(['require', "jquery"],function(require, jQuery) {
 (function($) {
 $.reject = function(options) {
 	var opts = $.extend(true,{
@@ -316,6 +312,7 @@ $.reject = function(options) {
 		// Attempts both versions of analytics code. (Newest first)
 		try {
 			// Newest analytics code
+            var _gaq = _gaq || [];
 			_gaq.push(['_trackEvent', 'External Links',  host, url]);
 		} catch (e) {
 			try {
